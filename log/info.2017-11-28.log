@@ -1,0 +1,430 @@
+Starting SellApplicationTests on LAPTOP-BRJTUI81 with PID 148264 (started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d2de489: startup date [Tue Nov 28 16:43:35 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$df7672f5.CGLIB$jpaVendorAdapter$6(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$df7672f5$$FastClassBySpringCGLIB$$b3d5a49.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$df7672f5.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 85 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2194)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2225)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 86 common frames omitted
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000342: Could not obtain connection to query metadata : Access denied for user 'root'@'localhost' (using password: YES)
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+Starting SellApplicationTests on LAPTOP-BRJTUI81 with PID 164444 (started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d2de489: startup date [Tue Nov 28 16:48:58 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverEndpointExporter' defined in class path resource [com/gexf/config/WebSocketConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 165220 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Tue Nov 28 16:57:36 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 10061 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Tue Nov 28 16:57:36 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 29.766 seconds (JVM running for 30.809)
+Starting SellApplicationTests on LAPTOP-BRJTUI81 with PID 162812 (started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d2de489: startup date [Tue Nov 28 16:58:15 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serverEndpointExporter' defined in class path resource [com/gexf/config/WebSocketConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: javax.websocket.server.ServerContainer not available
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 165064 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Tue Nov 28 17:04:28 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 8395 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Tue Nov 28 17:04:28 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 27.776 seconds (JVM running for 28.626)
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 166376 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Tue Nov 28 17:20:51 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 8329 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Tue Nov 28 17:20:51 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 33.524 seconds (JVM running for 34.744)

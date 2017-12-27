@@ -1,0 +1,1605 @@
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 180440 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 09:45:04 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5314 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 09:45:04 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 14.673 seconds (JVM running for 15.567)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 63 ms
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: 2Fseller2Flogin
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: 
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2F232F
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2F232F
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http:
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3A2F2F03f22af6.ngrok.io2F232F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3A2F2F03f22af6.ngrok.io2F232F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3A2F2F03f22af6.ngrok.io2F232F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2F232F
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/#/
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/#/
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Fproduct2Flist
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 183500 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 10:33:45 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 6517 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 10:33:45 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 16.906 seconds (JVM running for 17.469)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/product/list
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 168636 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 10:37:14 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5664 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 10:37:14 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 17.968 seconds (JVM running for 18.553)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 138 ms
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/product/list
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 180124 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 10:48:11 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5652 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 10:48:11 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 16.507 seconds (JVM running for 17.217)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 83 ms
+accessToken: 4_wUItd37NsuaGvQs1VzQrEkm1o9B1osE9TMBGy8z1-nAfeIWqFwTHtfe1Io8dPLbAyrr5-XedoTNFMQHOzfXt_A
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Fproduct2Flist
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+accessToken: 4_RCfnEIbGEWhgDn4Op6E2o28CBlzoXoxxT-iOo_hQUvAIOYMEZHLTyv3ZSw7J-Ldc6XjoUpZI7uEs4x2y5ig7eQ
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/category/list
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 181212 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 11:01:18 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5193 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 11:01:18 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 15.593 seconds (JVM running for 16.223)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+accessToken: 4_ucdd1vYx4CiUGnGNEY0pzx5GWV5WXs1mXscIdyvYte_AJScbS-yIwVTsJXUJXAiTnfExbHfYfmo7z0ZwQCOsXA
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+HHH000397: Using ASTQueryTranslatorFactory
+accessToken: 4_G9Jw7EgJklFoYGW0SObJaY8MefKhioj5sUZ5tAFIS4TBk5ENkRHAGgL7PZhdEF9RT9PrnDfL8bdgU3KYhwvSOA
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Flogin
+accessToken: 4_ktt-HLS-drHTc25k8_xXK4Fi8akVHNFMsjsgb5mUQfAeRirinL6mC-OsS7Mzrlfj_Hk0VfryBu0k1UNC0cGj_Oi1veV6F_CNvLmplV9Hs4g
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 184076 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 11:16:04 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5515 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 11:16:04 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 15.438 seconds (JVM running for 16.057)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+accessToken: 4_jj0B2jAqs0QsN4_dvh1BoqqCJ0KNfVbM4kalZ8tCaN-vN_4qoBqmzkrw3T99vGc7ge53pjBnc96UaR_IbtXzRA
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+accessToken: 4_xUJmiXEA9CCXj07DEAukTRFemxfIMe5vPNrRjPSkdyzajD_PhJL3I-JFRptCqd1Jg-oSu0uNroAeZecbjvjNRQ
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+accessToken: 4_Qzie3Lk8O-a99M21xPm3_LJ5bZUEjpjtIQUAux5peX6Nn4FJDfi3LzpC9fstUg5Q3V7_sOuMI9VenqWevWUZRw
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Flogin
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 185160 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 13:33:34 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5777 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 13:33:34 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 15.71 seconds (JVM running for 16.432)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 52 ms
+accessToken: 4_HtK-TUWiCrdrUIZGkF_NmwNGJyvHQaQVO1QSsMczKRtNI6cSMKkKkx2UGEruCGR-_IgmHH1Rf9kfvv1SAPB9_Q
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+accessToken: 4_J-HZf78CTyRvwgKWv7SuR0r74ANFrgoJ9XErM9NWC01YrKw_eekEH7pMjbviUHEJlduC53ZhfBnF-BDczEDReg
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 184296 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 13:38:48 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 6002 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 13:38:48 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 15.243 seconds (JVM running for 15.883)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+微信授权
+accessToken: 4_tQSHcD7Oq3S0Wgxu65dKcQYfpfSKl4fO6h9wR1nH6he5Px5lFRGtPQ8sBWNDVVGcq0TCbH1b7awHTII3fGbE9Q
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 169856 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 13:43:09 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5804 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 13:43:09 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 16.342 seconds (JVM running for 16.922)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+微信授权
+accessToken: 4_T1lSMWQvj3UT0D3IezntMDnCAIVvoI-2VLqVvF-_N3aFW2xkx8Sa5p2sz9VuAdjpnjd92c0rW_lvzt5QR8DxtA
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http:
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+微信授权
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3a2f2f03f22af6.ngrok.io2fseller2flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权
+accessToken: 4_MCQANE-ni2lDZ4ftfNNTnYVCVjuJHv-V5oeIT7cbjdb9H1ZVw5ZJxPqe-cssdGNBVuGALISWhgvN_2jqRHj0hA
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 170616 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 13:49:05 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5717 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 13:49:05 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 17.505 seconds (JVM running for 18.196)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 78 ms
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3a2f2f03f22af6.ngrok.io2fseller2flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A#wechat_redirect
+微信授权code: 071AHRZ51If80N1fmP261TIuZ51AHRZl
+accessToken: 4_lhjB27KkfKbOCT7-5EE_cAufFrjrqq5IcwR_ENLl8uaB9TkP1nQC8JisDxs7UfWOLVz8yeKAadpbOzr5V5KwvA
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权code: 071AHRZ51If80N1fmP261TIuZ51AHRZl
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权code: 081pSUN82FRtbR06UEN82zc2O82pSUNI
+accessToken: 4_hSjh2DLyPQNlSFj_HEKE__FjRT_vdnidZoH8hTJkG_npl2fZAHpz5ZE0ka6c0r8G9ywrDb1H2UEYJWdt4pPPBA
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权code: 081pSUN82FRtbR06UEN82zc2O82pSUNI
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 185036 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 14:28:04 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 6612 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 14:28:04 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 19.396 seconds (JVM running for 19.993)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+微信授权code: 011JP42y05xSzj1GrQ1y0NP12y0JP42K
+accessToken: 4_ktt-HLS-drHTc25k8_xXK7qBVI7qF3Tp6hX99WTVur1UtayuwJG6ecw9LZ16kdQEPYVNuGgOh0saZMAjPqxweA
+opiedId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/category/list
+微信授权code: 011JP42y05xSzj1GrQ1y0NP12y0JP42K
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 180932 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 14:37:12 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5728 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 14:37:12 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 14.519 seconds (JVM running for 15.225)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 76 ms
+微信授权code: 081XxePk0Ckhhk1fs4Ok09mcPk0XxePT
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Fcategory2Flist
+微信授权code: 081XxePk0Ckhhk1fs4Ok09mcPk0XxePT
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/category/list
+【登录校验】Cookie中查不到token
+【登录校验】Cookie中查不到token
+【登录校验】Cookie中查不到token
+【登录校验】Cookie中查不到token
+微信授权code: 07184A2V08RldU1l9W2V0ZyB2V084A2D
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权code: 07184A2V08RldU1l9W2V0ZyB2V084A2D
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+HHH000397: Using ASTQueryTranslatorFactory
+【登录校验】Cookie中查不到token
+微信授权code: 011wxejg2OungC0NvZjg2Rsfjg2wxej6
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权code: 011wxejg2OungC0NvZjg2Rsfjg2wxej6
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Flogin
+微信授权code: 011wxejg2OungC0NvZjg2Rsfjg2wxej6
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+【登录校验】Cookie中查不到token
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3a2f2f03f22af6.ngrok.io2fseller2flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权code: 071jhmIR0dA1l9279THR07JaIR0jhmIX
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权code: 071jhmIR0dA1l9279THR07JaIR0jhmIX
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Flogin
+微信授权code: 071jhmIR0dA1l9279THR07JaIR0jhmIX
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+【登录校验】Cookie中查不到token
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3A2F2F03f22af6.ngrok.io2F232F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+微信授权code: 061SMo730B0ICC1lG3430HDy730SMo7n
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/#/
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2F%23%2F#wechat_redirect
+微信授权code: 061SMo730B0ICC1lG3430HDy730SMo7n
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/#/
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin%2F%23%2F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3A2F2F03f22af6.ngrok.io2Fseller2Flogin2F232F#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin%2F%23%2F#wechat_redirect
+微信授权code: 081K6E9h1M41Sz0z8I8h1STp9h1K6E9q
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login/#/
+微信授权code: 081K6E9h1M41Sz0z8I8h1STp9h1K6E9q
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login/#/
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3A2F2F03f22af6.ngrok.io2Fseller2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权code: 021NpICY19dqsZ02rTEY1NGRCY1NpICx
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权code: 021NpICY19dqsZ02rTEY1NGRCY1NpICx
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Flogin
+微信授权code: 021NpICY19dqsZ02rTEY1NGRCY1NpICx
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+【登录校验】Cookie中查不到token
+微信授权code: 071wyecv00uIcc1a83cv0Wlhcv0wyecb
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权code: 071wyecv00uIcc1a83cv0Wlhcv0wyecb
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Flogin
+微信授权code: 071wyecv00uIcc1a83cv0Wlhcv0wyecb
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+【登录校验】Cookie中查不到token
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 183224 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 14:52:20 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5482 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 14:52:20 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 13.282 seconds (JVM running for 14.273)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 69 ms
+微信授权code: 001vv0MX0rmhu1246XNX0nkMLX0vv0Mo
+openId: null
+微信授权code: 001vv0MX0rmhu1246XNX0nkMLX0vv0Mo
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Flogin
+微信授权code: 001vv0MX0rmhu1246XNX0nkMLX0vv0Mo
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+HHH000397: Using ASTQueryTranslatorFactory
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权code: 071Vcc6i0eIOqz12NR8i04qk6i0Vcc61
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+微信授权code: 071Vcc6i0eIOqz12NR8i04qk6i0Vcc61
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http3A2F2F03f22af6.ngrok.io2Fseller2Flogin
+微信授权code: 071Vcc6i0eIOqz12NR8i04qk6i0Vcc61
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3A2F2F03f22af6.ngrok.io2Fseller2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http3A2F2F03f22af6.ngrok.io2Fseller2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权code: 061yINSa0VDA2x1Pz5Va0B8ySa0yINSr
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 145784 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 15:17:08 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5014 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 15:17:08 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 14.52 seconds (JVM running for 15.166)
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 170052 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 15:23:28 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5321 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 15:23:28 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 13.128 seconds (JVM running for 13.776)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 76 ms
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权code: 0010v6l817YDST1CHNl81bV6l810v6la
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on LAPTOP-BRJTUI81 with PID 181440 (C:\Users\bangsun\Workspaces\eclipse\sell\target\classes started by bangsun in C:\Users\bangsun\Workspaces\eclipse\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 15:44:11 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gexf.repository.ProductCategoryRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.15
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5753 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e800aaa: startup date [Fri Dec 01 15:44:11 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.gexf.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.gexf.controller.BuyerOrderController.create(com.gexf.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.gexf.VO.ResultVO<java.util.List<com.gexf.dto.OrderDTO>> com.gexf.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.gexf.VO.ResultVO<com.gexf.dto.OrderDTO> com.gexf.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gexf.VO.ResultVO com.gexf.controller.BuyerProductController.list(java.lang.String)
+Mapped "{[/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.notify(java.lang.String)
+Mapped "{[/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/pay],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.PayController.pay(java.lang.String,java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.gexf.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerCategoryController.save(com.gexf.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.finished(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.save(com.gexf.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.web.multipart.MultipartFile)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerProductController.Index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gexf.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrauthorize],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrAuthorize(java.lang.String)
+Mapped "{[/wechat/qruserInfo],methods=[GET]}" onto public java.lang.String com.gexf.controller.WechatController.qrUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.gexf.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.gexf.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 14.734 seconds (JVM running for 15.474)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io%2Fseller%2Flogin#wechat_redirect
+微信授权code: 081d1VZ30QLsMD1vjzZ30H9VZ30d1VZk
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io/seller/login
+HHH000397: Using ASTQueryTranslatorFactory
+【websocket消息】有新的连接, 总数:1
+【websocket消息】连接断开, 总数:0
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2Flocalhost%3A8088#wechat_redirect
+微信授权code: 071FHTSj0RWlSn15BGSj02hHSj0FHTSO
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://localhost:8088
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2Flocalhost%3A8088#wechat_redirect
+微信授权code: 081G1fHK0gJZz62WmlKK0tRgHK0G1fHn
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://localhost:8088
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2Flocalhost%3A8088#wechat_redirect
+微信授权code: 061Pfh9S0ILTt925mXbS0K0l9S0Pfh9Z
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://localhost:8088
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2Flocalhost%3A8088#wechat_redirect
+微信授权code: 081N0gQ02fNno115EZP02RaeQ02N0gQ0
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://localhost:8088
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2Flocalhost%3A8088#wechat_redirect
+微信授权code: 061i9F9K19cA660m9BbK1lUB9K1i9F9i
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://localhost:8088
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2Flocalhost%3A8088#wechat_redirect
+微信授权code: 0618Wcf91Ws9fQ13Wuc917O0f918Wcfr
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://localhost:8088
+微信授权code: 081N0gQ02fNno115EZP02RaeQ02N0gQ0
+openId: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://localhost:8088
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2Flocalhost%3A8088#wechat_redirect
+[微信网页授权获取 code],resule=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeb12c742cdc07aa&redirect_uri=http%3A%2F%2F03f22af6.ngrok.io%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F03f22af6.ngrok.io#wechat_redirect
+微信授权code: 071VALRP0DowKb2DfqRP03qbSP0VALR2
+openId: null
+opiedId2: oyYuNwtzmZZJDbneW1_PKV2o7UZ4
+state: http://03f22af6.ngrok.io
